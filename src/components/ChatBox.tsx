@@ -134,7 +134,7 @@ const ChatBox = (props: ChatBoxProps) => {
                         className={`message ${item.source}`}
                     >
                         <small className={`message-meta ${item.source}`}>
-                            {item.source} {item.datetime}
+                            {item.source === "customer" ? "Você" : "FlexBot"} {item.datetime}
                         </small>
                         <p>{item.message}</p>
                     </div>
@@ -144,6 +144,7 @@ const ChatBox = (props: ChatBoxProps) => {
             <div className="message-input">
                 <input
                     className="message-input-field"
+                    autoComplete="off"
                     type="text"
                     id="message"
                     name="message"
