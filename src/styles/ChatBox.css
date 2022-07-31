@@ -1,0 +1,113 @@
+/* Main container */
+
+.chatbox-container {
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px #122A57;
+    border: #122A57 solid;
+    max-width: 400px;
+    min-width: 350px;
+}
+
+/* Message box header */
+
+.flex-bot-img {
+    width: 30px;
+    margin: 10px 0px;
+}
+
+.message-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.message-box-header p {
+    font-weight: 700;
+    font-size: large;
+    color: #122A57;
+}
+
+.button-close-chatbox {
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.button-close-chatbox:hover {
+    transform: scale(1.2);
+    box-shadow: #122A57 solid 2px;
+}
+
+/* Message box */
+
+.message-box {
+    padding: 10px 5px;
+    border: #122A57 solid 0.5px;
+    max-height: 400px;
+    min-height: 100px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-box .message {
+    margin: 15px auto;
+    position: relative;
+    background-color: #d5dbe5;
+    padding: 2px 5px;
+    max-width: 200px;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    border-radius: 8px;
+    border: #afafaf solid 1px;
+}
+
+.message-box .message.customer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.message-box .message.bot {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.message-meta {
+    padding: 1px 10px;
+    position: absolute;
+    top: -20px;
+    color: grey;
+    background: #fff;
+    border-radius: 8px;
+    border: #d8d7d7 solid 0.5px
+}
+
+.message-meta.customer {
+    right: 0;
+}
+
+.message-meta.bot {
+    left: 0;
+}
+
+/* Input field */
+
+.message-input {
+    margin-top: 5px;
+}
+
+.message-input-field {
+    width: 99%;
+    height: 30px;
+}

@@ -1,6 +1,8 @@
 @import "./styles/Header.css";
 @import "./styles/Content.css";
 @import "./styles/Footer.css";
+@import "./styles/FakeBot.css";
+@import "./styles/ChatBox.css";
 
 @media(max-width: 992px){
     .flex-container{
